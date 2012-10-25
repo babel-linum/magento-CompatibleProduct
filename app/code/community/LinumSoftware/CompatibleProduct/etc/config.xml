@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * @package     LinumSoftware_CompatibleProduct
+ * @copyright   Copyright (c) 2012 Linum Software GmbH (http://www.linum.com/
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+
+<config>
+  <modules>
+    <LinumSoftware_CompatibleProduct>
+      <version>0.1.0</version>
+    </LinumSoftware_CompatibleProduct>
+  </modules>
+  <global>
+    
+    <blocks>
+      <compatibleproduct>
+	<class>LinumSoftware_CompatibleProduct_Block</class>
+      </compatibleproduct>
+    </blocks>
+    
+    <helpers>
+      <linumsoftware_compatibleproduct>
+	<class>LinumSoftware_CompatibleProduct_Helper</class>
+      </linumsoftware_compatibleproduct>
+    </helpers>
+    
+  </global>
+  
+  <frontend>
+    <layout>
+      <updates>
+	<compatibleproduct>
+	  <file>compatibleproduct.xml</file>
+	</compatibleproduct>
+      </updates>
+    </layout>
+    
+    <routers>
+      <checkout>
+	<args>
+	  <modules>
+	    <LinumSoftware_CompatibleProduct after="Mage_Checkout">LinumSoftware_CompatibleProduct_Checkout</LinumSoftware_CompatibleProduct>
+	  </modules>
+	</args>
+      </checkout>
+    </routers>		
+  </frontend>
+  
+</config>
