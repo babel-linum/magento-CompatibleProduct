@@ -1,0 +1,13 @@
+
+Die Magentoerweiterung "CompatibleProduct" verknüpft zwei Produkte miteinander. Das ist sinnvoll für Anwendungsfälle in denen es z.B. von einem Produkt unterschiedliche Qualitäten, gibt die aber an sich den gleichen Zweck erfüllen. Die Erweiterung weisst einen auf das entsprechend andere Produkt hin und gibt aus eine evtl. längere oder kürzere Lieferzeit mit an. Gleiches gilt für den Preis. Einen ersten Eindruck liefert evtl. folgendes Bildschirmfoto:
+
+http://www.anolo.de/fileadmin/DAM/Bilder/Magento-Hackathon/Erweiterungen/magento-compatible-product-warenkorb.png
+
+Im Moment verfügt die Erweiterung noch über einige Einschränkungen:
+
+* Die Verknüpfung der Produkte wird fix über das Attribut "astd_kompatibles_produkt" gesteuert.
+* Die Texte und Hinweise sind in Deutsch (und aktuell nicht lokalisierbar).
+* Beim Checkout wurde bisher nur der OnePageCheckout von Template Master getestet.
+
+(c) 2012 Linum Software GmbH
+http://www.linum.com
